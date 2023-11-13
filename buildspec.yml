@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - mvn clean install  
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+  - target/spring-boot-2-hello-world-1.0.2-SNAPSHOT.jar
